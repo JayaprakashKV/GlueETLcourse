@@ -34,3 +34,6 @@ CREATE TABLE order_summary (
 # 7.Create a data connection object for Redshift in AWS Glue
 This connection object stores the connection configurations such as URL, username, password etc for Glue to connect to Redshift
 
+# 8.Create and run ETL job Glue
+Use the script provided in the repo to create your ETL job, change the variables to suit your paths/names etc. and execute the job. Verify the results in Redshift
+
