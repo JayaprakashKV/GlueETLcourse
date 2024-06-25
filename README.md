@@ -30,5 +30,6 @@ CREATE TABLE order_summary (
     price DECIMAL(10, 2)
 );
 
-# 7.Create ETL job in AWS Glue
+# 7.Create a data connection object for Redshift in AWS Glue
+This connection object stores the connection configurations such as URL, username, password etc for Glue to connect to Redshift
 
