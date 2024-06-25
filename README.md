@@ -18,17 +18,18 @@ Create S3 endpoint as demonstrated in the video
 Catalog tables are useful to explore metadata and apply ETL transformations on the columns
 
 # 6.Create a table in Redshift using the following DDL 
-CREATE TABLE order_summary (
-    order_id INT,
-    customer_id INT,
-    customer_name VARCHAR(255),
-    order_date DATE,
-    total_amount DECIMAL(10, 2),
-    order_item_id INT,
-    product_id INT,
-    quantity INT,
-    price DECIMAL(10, 2)
+CREATE TABLE joined_orders (
+    order_id BIGINT,
+    customer_id BIGINT,
+    customer_name VARCHAR(256),
+    order_date VARCHAR(256),
+    total_amount DOUBLE PRECISION,
+    order_item_id BIGINT ,
+    product_id BIGINT,
+    quantity BIGINT,
+    price DOUBLE PRECISION
 );
+
 
 # 7.Create a data connection object for Redshift in AWS Glue
 This connection object stores the connection configurations such as URL, username, password etc for Glue to connect to Redshift
