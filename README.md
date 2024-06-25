@@ -18,7 +18,7 @@ Create S3 endpoint as demonstrated in the video
 Catalog tables are useful to explore metadata and apply ETL transformations on the columns
 
 # 6.Create a table in Redshift using the following DDL 
-CREATE TABLE joined_orders (
+CREATE TABLE order_summary (
     order_id BIGINT,
     customer_id BIGINT,
     customer_name VARCHAR(256),
